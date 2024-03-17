@@ -1,3 +1,6 @@
+help:
+	@cat ./makefile
+
 build:
 	./setup.py sdist bdist_wheel
 
