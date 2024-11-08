@@ -4,7 +4,7 @@ from pygments.lexer import RegexLexer, words
 from pygments.token import Text, Comment, Operator, Keyword, Name, String, Number, Punctuation
 
 __all__ = ['PyroLexer']
-__version__ = "0.6.0"
+__version__ = "0.6.1"
 
 class PyroLexer(RegexLexer):
     name = 'Pyro'
@@ -59,7 +59,7 @@ class PyroLexer(RegexLexer):
 
             # Operators.
             (r'(<<|>>|!!|\?\?|<=|>=|\+=|-=|&&'
-             r'|==|!=|[<>!+\-*/&|~^=]|:\||:\?)', Operator),
+             r'|==|!=|[<>!+\-*/&|~^=%]|:\||:\?)', Operator),
 
             # Punctuation.
             (r'[()\[\]{}.,;:]', Punctuation),
